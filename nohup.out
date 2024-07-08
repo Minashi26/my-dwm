@@ -1,0 +1,49 @@
+
+gzip: stdin: unexpected end of file
+
+(process:6556): GLib-CRITICAL **: 21:01:32.598: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+
+** (nm-applet:15554): WARNING **: 21:23:13.944: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:23:13.953: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:23:13.954: atk-bridge: get_device_events_reply: unknown signature
+
+** (nm-applet:15554): WARNING **: 21:23:13.954: atk-bridge: get_device_events_reply: unknown signature
+
+** (nm-applet:15554): WARNING **: 21:23:13.954: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (nm-applet:15554): WARNING **: 21:23:13.962: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:23:13.962: atk-bridge: get_device_events_reply: unknown signature
+
+** (nm-applet:15554): WARNING **: 21:23:13.962: atk-bridge: get_device_events_reply: unknown signature
+
+** (nm-applet:15554): WARNING **: 21:23:13.963: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (nm-applet:15554): WARNING **: 21:33:18.058: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:33:18.081: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:33:18.122: AT-SPI: Could not obtain desktop path or name
+
+
+** (nm-applet:15554): WARNING **: 21:33:18.124: AT-SPI: Could not obtain desktop path or name
+
+
+(nm-applet:15554): Gdk-WARNING **: 21:34:16.647: GdkWindow 0x2400003 unexpectedly destroyed
+
+(nm-applet:15554): Gdk-WARNING **: 21:34:16.656: The program 'nm-applet' received an X Window System error.
+This probably reflects a bug in the program.
+The error was 'RenderBadPicture (invalid Picture parameter)'.
+  (Details: serial 683 error_code 141 request_code 138 (RENDER) minor_code 7)
+  (Note to programmers: normally, X errors are reported asynchronously;
+   that is, you will receive the error a while after causing it.
+   To debug your program, run it with the GDK_SYNCHRONIZE environment
+   variable to change this behavior. You can then get a meaningful
+   backtrace from your debugger if you break on the gdk_x_error() function.)
