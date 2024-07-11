@@ -48,6 +48,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod1Mask
+#define WINKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -69,13 +70,12 @@ static const char *rofiruncmd[] = { "rofi", "-show", "run", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_b,	   spawn,          {.v = browsercmd } },
-	{ MODKEY|ShiftMask,             XK_v,      spawn,          {.v = vscodecmd } },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = explorercmd } },
-	{ MODKEY|ShiftMask,              XK_r,      spawn,          {.v = rofiruncmd } },
-	{ MODKEY,                       XK_r,      spawn,          {.v = rofidruncmd } },
+	{ WINKEY,             			XK_t, 	   spawn,          {.v = termcmd } },
+	{ WINKEY,             			XK_b,	   spawn,          {.v = browsercmd } },
+	{ WINKEY,             			XK_v,      spawn,          {.v = vscodecmd } },
+	{ WINKEY,             			XK_e,      spawn,          {.v = explorercmd } },
+	{ WINKEY|ShiftMask,             XK_r,      spawn,          {.v = rofiruncmd } },
+	{ WINKEY,                       XK_r,      spawn,          {.v = rofidruncmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
